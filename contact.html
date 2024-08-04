@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("caCLqy7iqc9XQNbx8");
+    })();
+    </script>
+    <script src="script.js"></script>
+</head>
+<body style="background-color: #141414;">
+    <section style="background-color: #141414;" class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>  
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>  
+                    <li><a href="#contact, contact.html">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 style="text-align: center;">Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56953.36691961948!2d80.91423476123356!3d26.853135130474865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd1191f2cd9d%3A0xd2dbd88fdbb450c4!2sOlive%20Fitness%20Center!5e0!3m2!1sen!2sin!4v1722422680676!5m2!1sen!2sin" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Gulmarg Apartment, Jopling Rd, Butler Colony</h5>
+                    <p>Lucknow, Uttar Pradesh 226001</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 8299-056395</h5>
+                    <p>Monday to Saturday 6AM to 10PM</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+                <form id="myform">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="email"  id="email"name="email"  placeholder="Enter email address" required>
+                <input type="number"  id="number" name="number" placeholder= "Enter your phone no.">
+                <textarea rows="8" id="Message" name="Message" placeholder="Message"></textarea>
+                <button type="submit" onclick="sendMail()"  class="hero-btn red-btn">Send</button>
+                </form>
+        </div>
+    </div>
+</section>
+    
+<section class="footer" id="about">
+    <h4>About Us</h4>
+    <p>Established in 2002 in Lucknow, our gym has been a trailblazer in the city's fitness and gym industry.<br>From our humble beginnings, we have evolved with cutting-edge equipment and state-of-the-art facilities, all while preserving our esteemed name and unparalleled quality.<br>Experience the legacy of excellence and commitment to fitness that has made us a trusted leader for over two decades.</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/olivefitnesscenter/" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/p/Olive-Fitness-Center-100065571429695/?_rdr" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+    </div>
+</section>
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </body>
+    </html>
