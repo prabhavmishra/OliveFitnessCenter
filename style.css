@@ -10,7 +10,7 @@ html{
 }
 .header {
     min-height: 100vh;
-    background-image: url(homebg.png);
+    background-image: url(assets/images/homebg.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -107,7 +107,7 @@ nav .fa{
    color: transparent;
 }
 .services{
-    background-image: url(servicebg.png);
+    background-image: url(assets/images/servicebg.png);
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -151,7 +151,7 @@ p{
     padding: 20px 12px; 
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.334);
-    background: rgba(1, 42, 10, 0.5) url(groupclass.png),url(7.png), url(6.png);
+    background: rgba(1, 42, 10, 0.5) url(assets/images/groupclass.png),url(assets/images/7.png), url(assets/images/6.png);
     background-position: center;
     transition: 0.5s;
 }
@@ -159,7 +159,7 @@ p{
     box-shadow: 0 0 20px 0px #9AD901;
 }
 .gallery{
-    background: url(galbg.png);
+    background: url(assets/images/galbg.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -210,7 +210,7 @@ p{
     border-radius: 10px;
 }
 .testimonials{
-    background: url(trainerbg.png);
+    background: url(assets/images/trainerbg.png);
     background-position: center;
     position: relative;
     margin: auto;
@@ -285,7 +285,7 @@ p{
     text-align: left;
 }
 .cta{
-    background-image:  url(banner.png);
+    background-image:  url(assets/images/banner.png);
     background-position: center;
     background-size: cover;
     padding: 100px 0;
