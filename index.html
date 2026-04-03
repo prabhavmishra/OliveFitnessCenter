@@ -28,11 +28,11 @@
             <p>BE YOUR 
                 <span class="best">BEST</span>
             </p><br><br><br><br>
-            <pre>
+            <p class="hero-desc">
 Welcome to Olive Fitness Center, Lucknow - where your fitness journey begins with 
-state-of-the-art facilities and personalized training plans to help you achieve your health goals.
-#Aiming for a fitter world
-            </pre>
+state-of-the-art facilities and personalized training plans to help you achieve your health goals.<br>
+<span style="font-style: italic; color: #9AD901;">#Aiming for a fitter world</span>
+            </p>
             <a href="#contact" class="hero-btn">JOIN NOW</a>
         </div>    
     </section>
@@ -171,7 +171,28 @@ state-of-the-art facilities and personalized training plans to help you achieve 
         navLinks.style.right = "0";
     }
     function hideMenu(){
-        navLinks.style.right = "-200px";
+        navLinks.style.right = "-250px"; /* Match new CSS width */
+    }
+
+    // Visitor Counter (Hidden from public)
+    fetch("https://api.counterapi.dev/v1/olivefitnesscenter/pagevisits/up")
+        .then(response => response.json())
+        .then(data => {
+            window.ownerSiteVisits = data.count;
+        }).catch(e => console.log("Tracker blocked or failed"));
+
+    // Secret trigger for the owner
+    var aboutClicks = 0;
+    var aboutHeading = document.querySelector('.footer h4');
+    if(aboutHeading) {
+        aboutHeading.style.cursor = "pointer";
+        aboutHeading.addEventListener('click', function() {
+            aboutClicks++;
+            if(aboutClicks === 5) {
+                alert("Owner Dashboard: Total site visits = " + (window.ownerSiteVisits || "Counting..."));
+                aboutClicks = 0;
+            }
+        });
     }
 </script>
 </body>
