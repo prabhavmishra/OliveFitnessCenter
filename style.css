@@ -74,7 +74,7 @@ text-align: right;
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text-box p{
+.hero-title{
     font-size: 150px;
     font-family: "Anton", sans-serif;
     font-weight: 400;
@@ -374,7 +374,7 @@ p{
     margin-top: 0px;
 }
 @media (max-width: 700px) {
-    .text-box p {
+    .hero-title {
         font-size: 55px; /* Better scaling */
         margin-top: 50px;
         line-height: 1.1;
